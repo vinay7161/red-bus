@@ -161,10 +161,10 @@ const BusFilters = ({
 
         {/* Actions */}
         <div className="flex flex-col space-y-2">
-          <button className="btn btn-primary w-full" onClick={applyFilters}>
+          <button className="btn bg-[#D84E55] py-1 px-4 btn-primary w-full" onClick={applyFilters}>
             Apply Filters
           </button>
-          <button className="btn btn-outline w-full" onClick={resetFilters}>
+          <button className="btn  btn-outline w-full" onClick={resetFilters}>
             Reset Filters
           </button>
         </div>

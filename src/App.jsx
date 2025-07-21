@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import Navbar from './components/Layout/Navbar';
-import Footer from './components/Layout/Footer';
 import { AuthProvider } from './context/AuthContext';
 import { BookingProvider } from './context/BookingContext';
 import Home from './page/Home';
@@ -15,6 +14,7 @@ import Checkout from './page/Checkout ';
 import ProtectedRoute from './components/auth/ProtectedRoute ';
 import PaymentSuccess from './page/PaymentSuccess';
 import MyBookings from './page/MyBookings';
+import Footer from './components/Layout/Footer';
 
 function App() {
   return (
@@ -51,7 +51,7 @@ function App() {
                 <Route path="/login" element={<Login/>} />
               </Routes>
             </main>
-            <Footer />
+            <Footer/>
           </div>
           <Toaster position="top-center" />
         </BookingProvider>

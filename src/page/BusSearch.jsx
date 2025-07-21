@@ -232,7 +232,7 @@ const BusSearch = () => {
             <div>
               <button
                 onClick={handleSearch}
-                className="btn btn-primary  bg-[#D84E55] w-full md:w-auto"
+                className="btn btn-primary py-2 px-3 rounded  bg-[#D84E55] w-full md:w-auto"
               >
                 Search
               </button>

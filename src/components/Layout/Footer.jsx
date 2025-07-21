@@ -4,7 +4,7 @@ import { Bus, Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-r
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--secondary)] text-white">
+    <footer className="bg-black text-white">
       <div className="container mx-auto py-10 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and About */}

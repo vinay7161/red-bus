@@ -186,7 +186,7 @@ const MyBookings = () => {
                         <button className="btn btn-outline text-sm py-1">Change Seats</button>
                       </>
                     )}
-                    <button className="btn btn-primary text-sm py-1">View Details</button>
+                    <button className="btn btn-primary  bg-[#D84E55] text-sm py-1">View Details</button>
                   </div>
                 </div>
               </div>

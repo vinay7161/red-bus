@@ -181,7 +181,7 @@ const SearchForm = () => {
 
         {/* Search Button */}
         <div className="mt-6">
-          <button type="submit" className="btn btn-primary w-full py-3">
+          <button type="submit" className="btn  bg-[#D84E55] btn-primary w-full py-3">
             Search Buses
           </button>
         </div>
