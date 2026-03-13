@@ -107,7 +107,7 @@ const BusCard = ({ bus, journeyDate }) => {
               </span>
             )}
           </div>
-          <button onClick={handleViewSeats} className="btn btn-primary py-1.5">
+          <button onClick={handleViewSeats} className="btn btn-primary px-4 py-1.5 rounded-2xl border-black/20 bg-[#D84E40] hover:bg-[#D84E55]">
             View Seats
           </button>
         </div>

@@ -81,7 +81,7 @@ const BusFilters = ({
               <label htmlFor="min-price" className="block text-xs text-gray-500 mb-1">
                 Min Price
               </label>
-              <div className="relative">
+              <div className="relative border  border-black/20 rounded">
                 <span className="absolute left-3 top-2 text-gray-500">₹</span>
                 <input
                   id="min-price"
@@ -90,7 +90,7 @@ const BusFilters = ({
                   max={priceRange[1] - 50}
                   value={priceRange[0]}
                   onChange={handlePriceChange}
-                  className="input pl-7 py-1 text-sm"
+                  className="input pl-7 py-1 text-sm "
                 />
               </div>
             </div>
@@ -101,7 +101,7 @@ const BusFilters = ({
               <label htmlFor="max-price" className="block text-xs text-gray-500 mb-1">
                 Max Price
               </label>
-              <div className="relative">
+              <div className="relative border  border-black/20 rounded">
                 <span className="absolute left-3 top-2 text-gray-500">₹</span>
                 <input
                   id="max-price"
@@ -110,7 +110,7 @@ const BusFilters = ({
                   max={maxAvailablePrice}
                   value={priceRange[1]}
                   onChange={handlePriceChange}
-                  className="input pl-7 py-1 text-sm"
+                  className="input pl-7 py-1 text-sm "
                 />
               </div>
             </div>

@@ -253,7 +253,7 @@ const SeatSelection = () => {
                   </div>
                   <div className="flex justify-between font-semibold border-t pt-2 mt-2">
                     <p>Total Amount</p>
-                    <p className="text-[var(--primary)]">
+                    <p className="text-[#D84E55]">
                       ₹{busDetails.fare * bookingDetails.selectedSeats.length}
                     </p>
                   </div>
@@ -262,7 +262,7 @@ const SeatSelection = () => {
 
               <button
                 onClick={handleContinue}
-                className="btn btn-primary w-full mt-6"
+                className="btn btn-primary w-full mt-6 bg-[#D84E55] px-4 py-2 rounded"
                 disabled={!bookingDetails.selectedSeats.length}
               >
                 Continue to Payment

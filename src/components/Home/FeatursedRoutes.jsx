@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Clock, Bus, MapPin } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight, Clock, Bus, MapPin } from "lucide-react";
 
 const RouteCard = ({
   source,
@@ -9,7 +9,7 @@ const RouteCard = ({
   duration,
   frequency,
   busCount,
-  image
+  image,
 }) => {
   return (
     <div className="card overflow-hidden group">
@@ -22,7 +22,8 @@ const RouteCard = ({
           <div className="flex items-center space-x-1 mb-1">
             <MapPin className="h-4 w-4" />
             <h3 className="text-lg font-semibold">
-              {source} <ArrowRight className="h-4 w-4 inline mx-1" /> {destination}
+              {source} <ArrowRight className="h-4 w-4 inline mx-1" />{" "}
+              {destination}
             </h3>
           </div>
           <p className="text-sm opacity-90">From ₹{price}</p>
@@ -41,8 +42,10 @@ const RouteCard = ({
         </div>
         <p className="text-sm text-gray-500 mb-4">{frequency}</p>
         <Link
-          to={`/search?source=${source}&destination=${destination}&date=${new Date().toISOString().split('T')[0]}`}
-          className="btn btn-outline w-full group-hover:bg-[var(--primary)] group-hover:text-white group-hover:border-[var(--primary)] transition-colors"
+          to={`/search?source=${source}&destination=${destination}&date=${
+            new Date().toISOString().split("T")[0]
+          }`}
+          className="btn w-full rounded-2xl bg-white border border-black/20 text-black font-semibold px-20 py-1 transition-colors duration-300 hover:bg-[#D84E55] hover:text-white hover:border-[#D84E55]"
         >
           View Buses
         </Link>
@@ -54,40 +57,44 @@ const RouteCard = ({
 const FeaturedRoutes = () => {
   const routes = [
     {
-      source: 'Delhi',
-      destination: 'Jaipur',
+      source: "Delhi",
+      destination: "Jaipur",
       price: 550,
-      duration: '5h 30m',
-      frequency: 'Every hour',
+      duration: "5h 30m",
+      frequency: "Every hour",
       busCount: 85,
-      image: 'https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image:
+        "https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      source: 'Mumbai',
-      destination: 'Pune',
+      source: "Mumbai",
+      destination: "Pune",
       price: 350,
-      duration: '3h 15m',
-      frequency: 'Every 30 minutes',
+      duration: "3h 15m",
+      frequency: "Every 30 minutes",
       busCount: 120,
-      image: 'https://images.pexels.com/photos/2397414/pexels-photo-2397414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image:
+        "https://images.pexels.com/photos/2397414/pexels-photo-2397414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      source: 'Bangalore',
-      destination: 'Chennai',
+      source: "Bangalore",
+      destination: "Chennai",
       price: 750,
-      duration: '6h 45m',
-      frequency: 'Every hour',
+      duration: "6h 45m",
+      frequency: "Every hour",
       busCount: 95,
-      image: 'https://images.pexels.com/photos/10070972/pexels-photo-10070972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image:
+        "https://images.pexels.com/photos/10070972/pexels-photo-10070972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      source: 'Hyderabad',
-      destination: 'Bangalore',
+      source: "Hyderabad",
+      destination: "Bangalore",
       price: 950,
-      duration: '8h 30m',
-      frequency: 'Every 2 hours',
+      duration: "8h 30m",
+      frequency: "Every 2 hours",
       busCount: 65,
-      image: 'https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image:
+        "https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
   ];
 
@@ -96,7 +103,10 @@ const FeaturedRoutes = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-gray-900">Popular Routes</h2>
-          <Link to="/search" className="text-[var(--primary)] hover:underline font-medium">
+          <Link
+            to="/search"
+            className="text-[var(--primary)] hover:underline font-medium"
+          >
             View All Routes
           </Link>
         </div>
